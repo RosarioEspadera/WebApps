@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rosario's Projects</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+    li {
+      background: #fff;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    li:hover {
+      transform: scale(1.02);
+    }
+    a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+    .desc {
+      margin-top: 0.5rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rosario's Web Projects</h1>
+  <ul id="siteList"></ul>
+
+  <script>
+    const websites = [
+      {
+        name: "🎵 Deezer Music App",
+        url: "https://rosarioespadera.github.io/Music-App/",
+        description: "Frontend music player with location-based previews."
+      },
+      {
+        name: "🎶 Music Backend (YouTube)",
+        url: "https://music-app-dqaf.onrender.com/",
+        description: "FastAPI backend with YouTube search and playlist DB."
+      },
+      {
+        name: "📦 GitHub Repo: Music App",
+        url: "https://github.com/RosarioEspadera/Music-App",
+        description: "Full source code for frontend and backend."
+      },
+      {
+      name: "📦 GitHub Repo: Flashcards App 1",
+        url: "https://rosarioespadera.github.io/flashcard-app/",
+        description: "Full source code for frontend and backend."
+      },
+      {
+      name: "📦 GitHub Repo: Flashcards App 2",
+        url: "https://rosarioespadera.github.io/FlaireCards-Web/",
+        description: "Full source code for frontend and backend."
+      },
+      {   
+    name: "📦 GitHub Repo: Flashcards App 3",
+        url: "https://rosarioespadera.github.io/-CardsEcE-/",
+        description: "Full source code for frontend and backend."
+      },  
+      {
+    name: "📦 GitHub Repo: Flashcards App 4",
+        url: "https://rosarioespadera.github.io/FlashcardsEcE/",
+        description: "Full source code for frontend and backend."
+      },
+       {
+    name: "📦 GitHub Repo: Flashcards App 5",
+        url: "https://rosarioespadera.github.io/Elex1-flashcards/",
+        description: "Full source code for frontend and backend."
+      },
+        {
+    name: "📦 GitHub Repo: Flashcards App 6",
+        url: "https://rosarioespadera.github.io/Elex1/",
+        description: "Full source code for frontend and backend."
+      },
+    {
+    name: "📦 GitHub Repo: Savoria",
+        url: "https://rosarioespadera.github.io/Savoria/",
+        description: "Full source code for frontend and backend."
+      },
+      {
+   name: "📦 GitHub Repo: Eloria",
+        url: "https://rosarioespadera.github.io/Eloria/",
+        description: "Full source code for frontend and backend."
+      }
+    ];
+
+    const list = document.getElementById("siteList");
+    websites.forEach(site => {
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${site.url}" target="_blank">${site.name}</a>
+                      <div class="desc">${site.description}</div>`;
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>
