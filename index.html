@@ -48,63 +48,104 @@
   <ul id="siteList"></ul>
 
   <script>
-    const websites = [
-      {
-        name: "🎵 Deezer Music App",
-        url: "https://rosarioespadera.github.io/Music-App/",
-        description: "Frontend music player with location-based previews."
-      },
-      {
-        name: "🎶 Music Backend (YouTube)",
-        url: "https://music-app-dqaf.onrender.com/",
-        description: "FastAPI backend with YouTube search and playlist DB."
-      },
-      {
-        name: "📦 GitHub Repo: Music App",
-        url: "https://github.com/RosarioEspadera/Music-App",
-        description: "Full source code for frontend and backend."
-      },
-      {
-      name: "📦 GitHub Repo: Flashcards App 1",
-        url: "https://rosarioespadera.github.io/flashcard-app/",
-        description: "Full source code for frontend and backend."
-      },
-      {
-      name: "📦 GitHub Repo: Flashcards App 2",
-        url: "https://rosarioespadera.github.io/FlaireCards-Web/",
-        description: "Full source code for frontend and backend."
-      },
-      {   
-    name: "📦 GitHub Repo: Flashcards App 3",
-        url: "https://rosarioespadera.github.io/-CardsEcE-/",
-        description: "Full source code for frontend and backend."
-      },  
-      {
-    name: "📦 GitHub Repo: Flashcards App 4",
-        url: "https://rosarioespadera.github.io/FlashcardsEcE/",
-        description: "Full source code for frontend and backend."
-      },
-       {
-    name: "📦 GitHub Repo: Flashcards App 5",
-        url: "https://rosarioespadera.github.io/Elex1-flashcards/",
-        description: "Full source code for frontend and backend."
-      },
-        {
-    name: "📦 GitHub Repo: Flashcards App 6",
-        url: "https://rosarioespadera.github.io/Elex1/",
-        description: "Full source code for frontend and backend."
-      },
-    {
-    name: "📦 GitHub Repo: Savoria",
-        url: "https://rosarioespadera.github.io/Savoria/",
-        description: "Full source code for frontend and backend."
-      },
-      {
-   name: "📦 GitHub Repo: Eloria",
-        url: "https://rosarioespadera.github.io/Eloria/",
-        description: "Full source code for frontend and backend."
-      }
-    ];
+ const websites = [
+  {
+    name: "Lifesim (Life Simulator)",
+    url: "https://rosarioespadera.github.io/Lifesim/",
+    description: "Life simulator game built in JavaScript."
+  },
+  {
+    name: "Music-App",
+    url: "https://rosarioespadera.github.io/Music-App/",
+    description: "Frontend music player with location-based music previews."
+  },
+  {
+    name: "flashcard-app",
+    url: "https://rosarioespadera.github.io/flashcard-app/",
+    description: "Interactive flashcards app (full-stack)."
+  },
+  {
+    name: "FlaireCards-Web",
+    url: "https://rosarioespadera.github.io/FlaireCards-Web/",
+    description: "Alternate frontend of flashcard app."
+  },
+  {
+    name: "-CardsEcE-",
+    url: "https://rosarioespadera.github.io/-CardsEcE-/",
+    description: "Flashcards variant exploring tagging and UI patterns."
+  },
+  {
+    name: "FlashcardsEcE",
+    url: "https://rosarioespadera.github.io/FlashcardsEcE/",
+    description: "Another variation of the flashcards interface."
+  },
+  {
+    name: "Elex1-flashcards",
+    url: "https://rosarioespadera.github.io/Elex1-flashcards/",
+    description: "Elex1 flashcards app—study with a new style."
+  },
+  {
+    name: "Savoria",
+    url: "https://rosarioespadera.github.io/Savoria/",
+    description: "Restaurant-style food UI (client and backend)."
+  },
+  {
+    name: "Eloria",
+    url: "https://rosarioespadera.github.io/Eloria/",
+    description: "Menu ordering web app with chat and profile pages."
+  },
+  {
+    name: "App-Download",
+    url: "https://rosarioespadera.github.io/App-Download/",
+    description: "Interface to download mobile app (.apk)."
+  },
+  {
+    name: "Orderneario (Food Map)",
+    url: "https://rosarioespadera.github.io/Orderneario/",
+    description: "Map-based food ordering with store pins (Supabase + Leaflet)."
+  },
+  {
+    name: "OrderCafe",
+    url: "https://rosarioespadera.github.io/OrderCafe/",
+    description: "Café ordering UI with animations and Express backend logic."
+  },
+  {
+    name: "Foodneario",
+    url: "https://rosarioespadera.github.io/Foodneario/",
+    description: "Food ordering flow with menu browsable sections."
+  },
+  {
+    name: "pdf-viewer",
+    url: "https://rosarioespadera.github.io/pdf-viewer/",
+    description: "In-browser PDF viewer built with JS and CSS."
+  },
+  {
+    name: "WebApp (Skeleton)",
+    url: "https://rosarioespadera.github.io/WebApp/",
+    description: "General web app template skeleton."
+  },
+  {
+    name: "Websitesample",
+    url: "https://rosarioespadera.github.io/Websitesample/",
+    description: "Sample website codebase with Python server support."
+  },
+  {
+    name: "fix-app-Elex1",
+    url: "https://rosarioespadera.github.io/fix-app-Elex1/",
+    description: "Bug-fix version of the Elex1 flashcards app."
+  },
+  {
+    name: "Ordernerio Backend (docs)",
+    url: "https://rosarioespadera.github.io/fooderio-backend/",
+    description: "Documentation or frontend placeholder for Fooderio backend."
+  },
+  {
+    name: "Orderneario (docs)",
+    url: "https://rosarioespadera.github.io/fooderio-backend/",
+    description: "Alternative documentation placeholder for Fooderio."
+  }
+];
+
 
     const list = document.getElementById("siteList");
     websites.forEach(site => {
